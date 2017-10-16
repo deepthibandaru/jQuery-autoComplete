@@ -1,5 +1,4 @@
-http://www.java2s.com/Code/Jar/j/Downloadjsonsimple111jar.htm
-package com.vzwcorp.ws;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -8,15 +7,15 @@ import java.io.InputStreamReader;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-public class test {
+public class findCity {
 	public static final String EXIT_COMMAND = "exit";
 	public static void main(String args[]){
 		JSONParser parser = new JSONParser();
         try
         {
-        	String filePath = new File("us-states1.json").getAbsolutePath();
-        	System.out.println (filePath);
-        	FileReader reader = new FileReader("/Users/bandde1/workspace/sped/us-states1.json");
+        	String filePath = new File("cities.json").getAbsolutePath();
+        	System.out.println ("path is===="filePath);
+<!--         	FileReader reader = new FileReader("/Users/bandde1/workspace/sped/us-states1.json");
             JSONObject jsonObject = (JSONObject) parser.parse(reader);
             String Str = "";
             JSONObject countries = (JSONObject) ( jsonObject.get("RestResponse"));
@@ -47,7 +46,7 @@ public class test {
                    
                 }
             	
-            }
+            } -->
         }
         catch(Exception e)
         {
